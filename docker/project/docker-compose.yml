@@ -1,0 +1,9 @@
+catho-search:
+  build: .
+  container_name: catho-search
+  restart: always
+  expose:
+    - "9000"
+  volumes:
+    - ../../../backend-test:/var/www/backend-test
+

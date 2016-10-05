@@ -1,0 +1,13 @@
+{
+  "require": {
+      "silex/silex": "~2.0"
+  },
+  "autoload": {
+    "psr-0": {
+      "Catho\\": ["app/src/"],
+      "Catho\\Controller": ["app/src/Catho/controller"],
+      "Catho\\Repository": ["app/src/Catho/repository"],
+      "Catho\\Service"   : ["app/src/Catho/service"]
+    }
+  }
+}

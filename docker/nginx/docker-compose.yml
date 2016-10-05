@@ -1,0 +1,13 @@
+nginx:
+  image: 'nginx:1.10'
+  container_name: nginx
+  restart: always
+  external_links:
+    - catho-search:fpm-search
+  ports:
+    - 80:80
+  volumes:
+    - ./nginx.conf:/etc/nginx/nginx.conf
+    - ../../../backend-test:/var/www/backend-test/
+
+
